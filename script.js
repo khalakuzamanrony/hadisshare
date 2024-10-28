@@ -51,7 +51,7 @@ function sendToCard() {
     const inputText = document.getElementById("hadithText").value;
     const paragraphs = inputText.split(/\n\s*\n/);
 
-    if (paragraphs.length >= 5) {
+    if (paragraphs.length >= 1) {
         // Assign global variables for each paragraph
         arabicText = paragraphs[0];
         narrator = paragraphs[1];
