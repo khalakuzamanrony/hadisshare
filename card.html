@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadith Card</title>
+    <link rel="stylesheet" href="card.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <!-- Image Row -->
+            <div class="card-image">
+                <img src="image.jpg" alt="Background Image" class="background-image">
+                <h1>আলহামদুলিল্লাহ</h1>
+            </div>
+            <hr>
+            <!-- Chips Row -->
+            <div class="card-chips">
+                <div class="chips-col1">
+                    <span class="chip red-chip chip1" id="bookChip">সহিহ বুখারী</span>
+                    <span class="chip red-chip chip2" id="hadithNoChip">হাদিস নং ৬১</span>
+                </div>
+                <div class="chips-col2">
+                    <span class="chip red-chip chip3" id="hadithTypeChip">সহিহ হাদিস</span>
+                </div>
+            </div>
+
+            <!-- Narrator Row -->
+            <div class="card-narrator" id="narratorText">
+                <em>ইব্‌নু ‘উমার (রাঃ) থেকে বর্ণিতঃ</em>
+            </div>
+
+            <!-- Hadith Row -->
+             <div class="textgroup">
+                <div class="card-hadith" id="hadithText">
+                    <p>তিনি বলেন আল্লাহর রসূল (সাল্লাল্লাহু ‘আলাইহি ওয়া সাল্লাম) একদা বললেনঃ গাছগাছালির মধ্যে এমন একটি গাছ আছে যার পাতা ঝরে না। আর তা মুসলিমের উদাহরণ, তোমরা আমাকে অবগত কর ‘সেটি কি গাছ?’ তখন লোকেরা জঙ্গলের বিভিন্ন গাছ-গাছালির নাম ধারণা করতে লাগল। ‘আবদুল্লাহ (রাঃ) বলেন, ‘আমার ধারণা হল, সেটা হবে খেজুর গাছ।’ কিন্তু (আমি ছোট থাকার কারণে) তা বলতে লজ্জা পাচ্ছিলাম। অতঃপর সাহাবীগণ বললেন, ‘হে আল্লাহর রসূল! আপনি আমাদের বলে দিন সেটি কি গাছ?’ তিনি বললেনঃ ‘তা হচ্ছে খেজুর গাছ।’</p>
+                </div>
+             </div>
+           
+             <hr>
+            <!-- Reference and Footnote Row -->
+            <div class="card-bottom">
+                <p class="reference" id="referenceText">(৬২, ৭২, ১৩১, ২২০৯, ৪৬৯৮, ৫৪৪৪, ৫৪৪৮, ৬১২২, ৬১৪৪; মুসলিম ৫০/১৫ হাঃ ২৮১১, আহমাদ ৬৪৭৭) (আধুনিক প্রকাশনীঃ ৫৯,ইসলামী ফাউন্ডেশনঃ ৫৯)</p>
+                <p class="footnote" id="footnoteText"> [১] ইমাম বুখারীর মতে এগুলো হাদীস রিওয়ায়াতের সমার্থক পারিভাষিক শব্দ; মুহাদ্দিসগণের মধ্য এ সম্বন্ধে মতভেদ আছে।</p>
+            </div>
+            <div class="card-image socials ">
+                <img src="facebook.png" alt="Background Image" class="background-image socials-card">
+                <img src="instagram.png" alt="Background Image" class="background-image socials-card">
+                <img src="pin.png" alt="Background Image" class="background-image socials-card">
+            </div>
+        </div>
+
+        <!-- Download Button -->
+        <button class="download-btn">Download</button>
+    </div>
+
+    <script src="card.js"></script>
+</body>
+</html>
