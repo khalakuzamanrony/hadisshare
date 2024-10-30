@@ -115,10 +115,16 @@ function processText() {
           }
 
           // Extract bookName, hadithNo, and hadithType from meta if available
-          const metaWords = meta.match(/\((.*?)\)/g) || [];
-          const bookName = metaWords[0] ? metaWords[0].replace(/[()]/g, '') : "N/A";
-          const hadithNo = metaWords[1] ? metaWords[1].replace(/[()]/g, '') : "N/A";
-          const hadithType = metaWords[2] ? metaWords[2].replace(/[()]/g, '') : "N/A";
+          // Extract bookName, hadithNo, and hadithType from meta if available
+          // const metaWords = meta.match(/\((.*?)\)/g) || [];
+          // const bookName = metaWords[0] ? metaWords[0].replace(/[()]/g, '') : "N/A";
+          // const hadithNo = metaWords[1] ? metaWords[1].replace(/[()]/g, '') : "N/A";
+          // const hadithType = metaWords[2] ? metaWords[2].replace(/[()]/g, '') : "N/A";
+
+          const metaWords = meta.match(/x([^x]+)x/g) || [];
+          const bookName = metaWords[0] ? metaWords[0].replace(/x/g, '') : "N/A";
+          const hadithNo = metaWords[1] ? metaWords[1].replace(/x/g, '') : "N/A";
+          const hadithType = metaWords[2] ? metaWords[2].replace(/x/g, '') : "N/A";
 
           // // Display the extracted data in the HTML
           // document.getElementById('arabicText').textContent = `Arabic Text: ${arabicText}`;
