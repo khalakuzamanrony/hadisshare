@@ -11,60 +11,61 @@
     <h2>Create Daily Hadith</h2>
     <hr>
     
-    <div class="field">
-      <!-- <label>Book Name</label> -->
+    <!-- <div class="field">
+
       <input type="text" id="bookName" maxlength="50" placeholder="Book Name" oninput="updateCount('bookName', 'bookCount', 50)">
       <span id="bookCount" class="counter">0/50</span>
     </div>
     
     <div class="field">
-      <!-- <label>Hadith No.</label> -->
+      <label>Hadith No.</label>
       <input type="text" id="hadithNo" maxlength="10" placeholder="Hadith No." oninput="updateCount('hadithNo', 'hadithNoCount', 10)">
       <span id="hadithNoCount" class="counter">0/10</span>
-    </div>
-    <div class="field">
-        <!-- <label>Hadith Type</label> -->
+    </div> -->
+    <!-- <div class="field">
+      <label>Hadith Type</label> 
         <select id="hadithType">
           <option value="">Select type of hadith</option>
           <option value="Sahih">Sahih</option>
           <option value="Hasan">Hasan</option>
           <option value="Da'if">Da'if</option>
         </select>
-      </div>
+      </div> -->
       
-    <div class="field">
-      <!-- <label>Narrator</label> -->
+    <!-- <div class="field">
+
       <input type="text" id="narrator" maxlength="100" placeholder="Narrator" oninput="updateCount('narrator', 'narratorCount', 100)">
       <span id="narratorCount" class="counter">0/100</span>
-    </div>
+    </div> -->
     
     <div class="field">
-      <!-- <label>Hadith</label> -->
-      <textarea id="hadithText" maxlength="2000" placeholder="Hadith" oninput="updateCount('hadithText', 'hadithCount', 2000)" style="min-height: 200px;"></textarea>
-      <span id="hadithCount" class="counter">0/2000</span>
+      <label>Hadith</label>
+      <textarea id="hadithText" maxlength="5000" placeholder="Hadith" oninput="updateCount('hadithText', 'hadithCount', 4000)" style="min-height: 400px;"></textarea>
+      <span id="hadithCount" class="counter">0/5000</span>
+      <span id="error-message" class="error-message"></span>
     </div>
     
-    <div class="field">
-      <!-- <label>Reference</label> -->
+    <!-- <div class="field">
+      <label>Reference</label>
       <input type="text" id="reference" maxlength="500" placeholder="Reference" oninput="updateCount('reference', 'referenceCount', 500)">
       <span id="referenceCount" class="counter">0/500</span>
     </div>
     
     <div class="field">
-      <!-- <label>Footnote</label> -->
+      <label>Footnote</label>
       <input type="text" id="footnote" maxlength="200" placeholder="Footnote" oninput="updateCount('footnote', 'footnoteCount', 200)">
       <span id="footnoteCount" class="counter">0/200</span>
     </div>
     <div class="field">
         <label>Background Image (optional)</label>
         <input type="file" id="bgImage" accept="image/*">
-      </div>
+      </div> -->
       
     <hr>
     
     <div class="button-group">
-      <button id="createCardBtn" onclick="sendToCard()">Create Card</button>
-      <button onclick="clearFields()">Clear</button>
+      <button id="createCardBtn" onclick="processText()" class="button">Create Card</button>
+      <button onclick="clearFields()"  class="button">Clear</button>
     </div>
   </div>
 

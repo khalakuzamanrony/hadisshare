@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadith Card Generator</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hadith Entry</h1>
+        
+        <textarea id="inputText" rows="10" cols="50" placeholder="Enter your text here with paragraphs separated by blank lines..."></textarea>
+        
+        <div class="button-group">
+            <button onclick="splitParagraphs()">Split Paragraphs</button>
+            <button onclick="processText()">Send to Card</button>
+            <button id="stc">Send to Card 2</button>
+        </div>
+
+        <div id="output"></div>
+
+        <div class="card" id="cardOutput">
+            <h2>Hadith Card</h2>
+            <p><strong>Arabic Text:</strong> <span id="arabicText"></span></p>
+            <p><strong>Narrator:</strong> <span id="narrator"></span></p>
+            <p><strong>Hadith Text:</strong> <span id="hadithText"></span></p>
+            <p><strong>Reference:</strong> <span id="reference"></span></p>
+            <p><strong>Footnote:</strong> <span id="footnote"></span></p>
+            <p><strong>Book Name:</strong> <span id="bookName"></span></p>
+            <p><strong>Hadith No:</strong> <span id="hadithNo"></span></p>
+            <p><strong>Hadith Type:</strong> <span id="hadithType"></span></p>
+        </div>
+    </div>
+    
+    <script src="new3.js"></script>
+</body>
+</html>
